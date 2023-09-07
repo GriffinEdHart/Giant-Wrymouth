@@ -1,0 +1,332 @@
+@import url("https://use.typekit.net/jso6dbg.css");
+/*global styles*/
+html {
+	scroll-behavior: smooth;
+}
+body{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-size: 100%;
+	background-color:rgba(10,10,10,1.00);
+	font-family: bebas-neue-by-fontfabric, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color:white;
+}
+
+h1,h2,h3,h4 {
+	font-family: bebas-neue-by-fontfabric, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+/*header area*/
+header {
+	background-color:rgba(35,35,35,1.00);
+	margin: 0px;
+	padding: 10px;
+}
+header h2 {
+	font-family: bebas-neue, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	margin-top: 0px;
+}
+header .headerPicture {
+	display: inline-block;
+	width: 40%;
+}
+.headerPicture img {
+	width: 100%;
+}
+.headerTagline {
+	display: inline-block;
+	text-align: center;
+	display: inline-block;
+	width: 50%; 
+	font-size: 2.5vw;
+	margin: 0 0 0 5vw;
+}
+#mainNav {
+	font-family: bebas-neue-by-fontfabric, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: white;
+	background-color:rgba(35,35,35,1.00);
+	margin: 0px 0px 0px -10px;
+}
+#mainNav ul {
+	text-align: center;
+	margin: 0 0px 0px -10px;
+}
+#mainNav li {
+	display: inline-block;
+	width: 20%;
+}
+#mainNav a{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 2.5vw;
+}
+#mainNav a:link, #mainNav a:visited {
+	text-decoration:none;
+	color:white;
+	padding: 0.25vw 0px;
+}
+#mainNav a:hover {
+	background-color:rgba(21,21,21,1.00)
+}
+/* Self explanatory, but this is so that the nav bar travels with the page without the header. */
+.sticky {
+	position:fixed;
+	top: 0;
+	width: 100%;
+	margin: 0 0 0 -10px;
+	z-index: 9999 /*placing this above everything else on the page */
+}
+
+.sticky + .container {
+	padding-top: 200px;
+}
+
+/* container area */
+.container {
+	margin: 0 3vw;
+	background-color:rgba(15,15,15,1.00);
+    padding: 0 0 2vw 0;
+}
+/* contact page specific */
+.contact {
+	margin: 0 3vw;
+	background-color:rgba(15,15,15,1.00);
+}
+.contact article {
+	width:auto;
+	font-size: 1.5vw;
+}
+.contact img {
+	display:inline-block;
+	float:left;
+	width:25%;
+	margin: 0 1vw 0 0
+}
+
+.contact li {
+	display:flex
+}
+
+.myForm {
+    display: grid;
+    grid-template-columns: [labels] auto [controls] 1fr;
+    grid-auto-flow: row;
+    grid-gap: .8em;
+    padding: 1.2em;
+}
+.myForm > label  {
+    grid-column: labels;
+    grid-row: auto;
+}
+.myForm > input,
+.myForm > textarea,
+.myForm > button {
+    grid-column: controls;
+    grid-row: auto;
+    border: none;
+    padding: 1em;
+}
+.submit {
+    font-family:bebas-neue-by-fontfabric, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+    font-size:1vw;
+}
+
+.images {
+    width: 95%;
+    margin:auto;
+    text-align:center;
+}
+.printImg {
+    display:inline-block;
+    margin:1vw;
+}
+
+.printImg img {
+    height: 20vw;
+}
+
+@media only screen and (max-width: 800px){
+    .printImg img{
+        width:100%;
+        height:auto;
+    }
+}
+
+.printInfo {
+    font-size:1vw;
+}
+
+.pricing {
+    padding: 2vw;
+}
+
+.pricing h1 {
+    font-size:3vw;
+}
+.pricing h2 {
+    font-size: 2vw;
+}
+
+.pricing p {
+    font-size: 1.5vw;
+}
+
+.pricing li {
+    font-size: 1.5vw;
+}
+
+/*hero area*/
+#hero {
+	position: relative;
+	text-align: center;
+	color:rgba(15,15,15,1.00)
+		
+}
+#hero img {
+	width: 100%;
+}
+#hero p {
+	font-weight: 200;
+	font-size: 6vw;
+	color: white;
+	position: absolute;
+	top: -1vw;
+	right: 11.5vw;
+}
+
+/*main area*/
+
+.shortAbout img{
+	display:inline-block;
+	width:35%;
+	margin:1vw;
+}
+.shortAbout p{
+	width:60%;
+	display: inline-block;
+	font-weight:400;
+	font-size: 3vw;
+	position:relative;
+	top:-6vw;
+	left: 1vw;
+}
+
+#wrymouth img{
+	display:inline-block;
+	width:50%;
+	margin: 1vw;
+}
+#wrymouthText{
+	display:inline-block;
+	width:45%;
+	position:relative;
+	top:-6vw;
+	margin: 1vw;
+}
+
+#wrymouthText p{
+	font-size: 1.5vw;
+}
+
+main section p{
+	display: inline-block;
+	width:45%;
+	font-size:2vw;
+	margin: 1vw;
+	position:relative;
+}
+main section img{
+	display:inline-block;
+	width:50%;
+	margin:1vw;
+	position:relative
+}
+#top p{
+	top:-11vw;
+}
+#bottom p{
+	top:-9vw;
+}
+
+.aboutMain {
+    position:relative;
+}
+
+.aboutMain img {
+	width:35%;
+	margin:1vw;
+    display:list-item;
+}
+
+.aboutMain p {
+    width:50%;
+	display: inline-block;
+	font-weight:400;
+	font-size: 1.5vw;
+	position:absolute;
+	top:5vw;
+    left: 38%;
+	
+}
+
+.aboutMain h1 {
+    position:absolute;
+    top: -1vw;;
+    left: 38%;
+    font-size: 3vw;
+    
+}
+
+/*footer area*/
+
+footer {
+	margin:-20px 0 0 0;
+	background-color:rgba(35,35,35,1.00);
+	padding:10px;
+}
+footer nav ul{
+	text-align: center;
+}
+footer nav li {
+	display: inline-block;
+	width: 5%;
+}
+footer img {
+	width:50%;
+}
+footer nav a {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+footer .contactMicro {
+	text-align:center;
+	font-size:1.25vw;
+}
+footer .contactMicro li {
+	display:inline-block;
+	padding: 0 1vw;
+}
+footer section{
+	text-align: center;
+	font-size: 1vw;
+}
+/*
+~Color Pallette~
+header: rgba(35,35,35,1.00)
+body: rgba(15,15,15,1.00)
+footer: rgba(35,35,35,1.00)
+*/
